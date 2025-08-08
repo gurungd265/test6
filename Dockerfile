@@ -1,26 +1,29 @@
-# Use official Node.js 20 image
+# Use Node.js 20
 FROM node:20
 
-# Set working directory
 WORKDIR /app
 
-# Copy only package files first for cache optimization
+# Copy package files
 COPY package*.json ./
 
-# Install dependencies WITHOUT optional native ones like rollup-linux-x64-gnu
-RUN npm install --no-optional
+# Clean npm cache and force install
+RUN npm cache clean --force && npm install --omit=optional
 
-# Copy the rest of your project
+# Rebuild to ensure compatibility
+RUN npm rebuild
+
+# Copy app code
 COPY . .
 
-# Build the React app with Vite
+# Force Vite to use JS version of Rollup by setting env var
+ENV ROLLUP_WASM=true
+
+# Build
 RUN npm run build
 
-# Install lightweight web server to serve static files
+# Install serve
 RUN npm install -g serve
 
-# Expose port for Render
 EXPOSE 3000
 
-# Start the server
 CMD ["serve", "-s", "dist", "-l", "3000"]
