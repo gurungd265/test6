@@ -1,26 +1,26 @@
-# Use Node.js 20 base image
+# Use official Node.js 20 image
 FROM node:20
 
 # Set working directory
 WORKDIR /app
 
-# Copy only the package.json first
+# Copy only package files first for cache optimization
 COPY package*.json ./
 
-# Clean install without optional dependencies (avoids native issues)
+# Install dependencies WITHOUT optional native ones like rollup-linux-x64-gnu
 RUN npm install --no-optional
 
-# Copy rest of the app
+# Copy the rest of your project
 COPY . .
 
-# Build the React app
+# Build the React app with Vite
 RUN npm run build
 
-# Install serve to serve the build output
+# Install lightweight web server to serve static files
 RUN npm install -g serve
 
-# Expose the port serve will run on
+# Expose port for Render
 EXPOSE 3000
 
-# Serve the static build folder
+# Start the server
 CMD ["serve", "-s", "dist", "-l", "3000"]
