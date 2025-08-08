@@ -1,30 +1,26 @@
-# Use Node.js 20 for compatibility with React 19 and react-router-dom 7
+# Use Node.js 20 base image
 FROM node:20
 
 # Set working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json
+# Copy only the package.json first
 COPY package*.json ./
 
-# Install dependencies
-RUN npm install
+# Clean install without optional dependencies (avoids native issues)
+RUN npm install --no-optional
 
-# Copy the rest of the app
+# Copy rest of the app
 COPY . .
 
-# Build the app
+# Build the React app
 RUN npm run build
 
-# Use a lightweight web server to serve the static files
-# You can use nginx, but vite preview works too (for simplicity)
-# If you want to use nginx, see alternate Dockerfile below
-
-# Install serve to serve static files
+# Install serve to serve the build output
 RUN npm install -g serve
 
-# Expose the port serve uses
+# Expose the port serve will run on
 EXPOSE 3000
 
-# Serve the build folder
+# Serve the static build folder
 CMD ["serve", "-s", "dist", "-l", "3000"]
