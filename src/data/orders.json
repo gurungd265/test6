@@ -1,0 +1,47 @@
+[
+  {
+    "id": 12345,
+    "status": "お届け済み",
+    "orderDate": "2023-05-15T10:30:00Z",
+    "deliveryDate": "2023-05-20T14:00:00Z",
+    "deliveryAddress": "〒164-0001 東京都 中野区 中野 1-2-3",
+    "totalPrice": 450000,
+    "items": [
+      {
+        "id": 1,
+        "productId": 101,
+        "name": "Smartfon Xiaomi Redmi Note 14",
+        "imageUrl": "https://images.uzum.uz/cu8eiaui4n324lr5k2ig/original.jpg",
+        "quantity": 1,
+        "price": 2500000,
+        "discountPrice": 2300000
+      },
+      {
+        "id": 2,
+        "productId": 205,
+        "name": "AirDots 3",
+        "imageUrl": "https://images.uzum.uz/cpg995bmdtjnp738g1c0/original.jpg",
+        "quantity": 2,
+        "price": 400000
+      }
+    ]
+  },
+  {
+    "id": 12346,
+    "status": "お届け中",
+    "orderDate": "2023-06-01T09:15:00Z",
+    "deliveryDate": null,
+    "deliveryAddress": "〒143-0016 東京都 大田区 大森北 4-5-6",
+    "totalPrice": 320000,
+    "items": [
+      {
+        "id": 3,
+        "productId": 302,
+        "name": "Smart watch soat Mi Band 9 Pro",
+        "imageUrl": "https://images.uzum.uz/cvp6mg5pb7fbmqmmmb00/original.jpg",
+        "quantity": 1,
+        "price": 320000
+      }
+    ]
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Apple AirPods Pro 2",
+    "description": "Apple AirPods Pro 2 ワイヤレスイヤホン、Bluetooth5.3、アクティブノイズキャンセリング、外部音取り込み、H2チップ、USB-C充電、防塵性能と耐汗耐水性能",
+    "price": "29800",
+    "image": "https://m.media-amazon.com/images/I/61Ima+Z8XZL._AC_SL1500_.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Amazon Fire TV Stick HD",
+    "description": "Amazon Fire TV Stick HD | 大画面でフルHDの楽しさを簡単に | ストリーミングメディアプレイヤー",
+    "price": "29800",
+    "image": "https://m.media-amazon.com/images/I/61RESPL0N5L._AC_SL1500_.jpg"
+  },
+  {
+    "id": 3,
+    "name": "[ACE] スーツケース",
+    "description": "[ACE] スーツケース mサイズ 63L/75L 容量拡張機能付き",
+    "price": "29800",
+    "image": "https://m.media-amazon.com/images/I/61jIhPBSuXL._AC_SY395_.jpg"
+  },
+  {
+    "id": 4,
+    "name": "[アディダス] スニーカー",
+    "description": "グランドコート TD ライフスタイル シューズ",
+    "price": "29800",
+    "image": "https://m.media-amazon.com/images/I/71IIW-jiarL._AC_SY395_.jpg"
+  },
+  {
+    "id": 5,
+    "name": "[オリメイク] 私は佐藤ではありません",
+    "description": "苗字tシャツ おもしろメンズ 半袖 プレゼント パロディ",
+    "price": "29800",
+    "image": "https://m.media-amazon.com/images/I/41hrGWWy7oL._AC_SX679_.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Apple AirPods Pro 2",
+    "description": "Apple AirPods Pro 2 ワイヤレスイヤホン、Bluetooth5.3、アクティブノイズキャンセリング、外部音取り込み、H2チップ、USB-C充電、防塵性能と耐汗耐水性能",
+    "price": "29800",
+    "image": "https://m.media-amazon.com/images/I/61Ima+Z8XZL._AC_SL1500_.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Amazon Fire TV Stick HD",
+    "description": "Amazon Fire TV Stick HD | 大画面でフルHDの楽しさを簡単に | ストリーミングメディアプレイヤー",
+    "price": "29800",
+    "image": "https://m.media-amazon.com/images/I/61RESPL0N5L._AC_SL1500_.jpg"
+  },
+  {
+    "id": 8,
+    "name": "[ACE] スーツケース",
+    "description": "[ACE] スーツケース mサイズ 63L/75L 容量拡張機能付き",
+    "price": "29800",
+    "image": "https://m.media-amazon.com/images/I/61jIhPBSuXL._AC_SY395_.jpg"
+  },
+  {
+    "id": 9,
+    "name": "[アディダス] スニーカー",
+    "description": "グランドコート TD ライフスタイル シューズ",
+    "price": "29800",
+    "image": "https://m.media-amazon.com/images/I/71IIW-jiarL._AC_SY395_.jpg"
+  },
+  {
+    "id": 10,
+    "name": "[オリメイク] 私は佐藤ではありません",
+    "description": "苗字tシャツ おもしろメンズ 半袖 プレゼント パロディ",
+    "price": "29800",
+    "image": "https://m.media-amazon.com/images/I/41hrGWWy7oL._AC_SX679_.jpg"
+  }
+]
